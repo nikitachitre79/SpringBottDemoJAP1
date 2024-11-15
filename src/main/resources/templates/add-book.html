@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/processBook}" method="post" th:object="${book}">
+<label>Book Title</label><input type="text" th:field="*{title}"/>
+<label>Book Author</label><input type="text" th:field="*{author}"/>
+<input type="submit" value="create book"/>
+</form>
+
+</body>
+</html>
